@@ -1,0 +1,34 @@
+ body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #191f42;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #normal,
+        #tablet,
+        #smartphone {
+            display: none;
+        }
+
+        /* normal */
+        @media (max-width: 920px) {
+            #normal {
+                display: block
+            }
+        }
+
+        /* tablet */
+        @media (max-width: 768px) {
+            #tablet {
+                display: block;
+            }
+        }
+
+        /* smartphone */
+        @media (max-width: 576px) {
+            #smartphone {
+                display: block;
+            }
+        }

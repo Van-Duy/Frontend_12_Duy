@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-family: arial, sans-serif;
+}
+
+div.main-content {
+    min-height: 100vh;
+}
+
+div.main-content div.slider {
+    position: relative;
+}
+
+div.main-content div.slider div.slider-item {
+    background-color: #0793e8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 450px;
+    padding: 0 60px;
+}
+
+div.main-content div.slider div.slider-item div.content {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.main-content div.slider div.slider-item div.content h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+div.main-content div.slider div.slider-item div.content p {
+    font-size: 14px;
+    color: #fff;
+}
+
+div.main-content div.slider .slider-dots {
+    position: absolute;
+    bottom: 10px;
+    right: calc(50% - 100px);
+    display: flex;
+}
+
+div.main-content div.slider .slider-dots .dot {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin:0 5px;
+}
+
+div.main-content div.slider .slider-dots .dot:hover {
+    cursor: pointer;
+}
+
+div.main-content div.slider .slider-dots .dot.active {
+    background-color: yellow;
+}
