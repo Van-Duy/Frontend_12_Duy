@@ -1,13 +1,12 @@
-$(document).ready(function () {
-    $(selector).click(function (e) { 
-        e.preventDefault();
-        
-    });
-    
-});
+showQuote = () => {
+    let quote = QUOTES[getRamdom(0, QUOTES.length - 1)];
+    let elmQuote = document.getElementById("elm-box-quote");
+    elmQuote.innerHTML = quote;
+}
 
+setInterval(() => {
+    showQuote();
+}, 5000);
 
-const number123 =(number1) => {
-    console.log(number1)
-}    
+showQuote();
 
